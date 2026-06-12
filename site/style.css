@@ -2,27 +2,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
 
 :root {
+	--bg-main: #F4EFE2;
+	--bg-second: #E8D8B5;
+	--text-main: #3D2C1E;
+	--text-light: #FFF8EA;
+	--wood: #8B5A2B;
+	--wood-dark: #5C3A21;
+	--gold: #D9A441;
+	--gold-dark: #B67E22;
+	--leaf: #5E8C31;
+	--leaf-dark: #3F6620;
+	--metal: #8C929A;
+	--border: #B88A54;
+
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
 }
 
+* {
+	box-sizing: border-box;
+}
+
+body, div, p {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: var(--bg-main);
+	color: var(--text-main);
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
 .decor {
 	font-family: "Stick", sans-serif;
+}
+
+header {
+	background-color: var(--wood-dark);
+	padding: 0.5rem;
 }
 
 header img {
 	display: block;
 	margin: auto;
-	width: 30%;
+	/* width: 30%; */
+	height: 5rem;
 }
 
-.hblock {
+#content {
+	flex: 1;
 	display: flex;
 	flex-direction: row;
 }
 
+nav {
+	background-color: var(--bg-second);
+	padding: 1rem;
+}
+
 nav a {
 	display: block;
+	color: var(--text-main);
+	font-weight: 700;
+	text-decoration: none;
+	margin: .3rem;
+}
+
+main {
+	padding: 3rem;
+	text-align: justify;
+}
+
+main p {
+	margin-top: 1.5rem;
+}
+
+li {
+	margin-top: .5rem;
+}
+
+footer {
+	background-color: var(--wood-dark);
+	color: var(--text-light);
+	padding: 3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%
 }

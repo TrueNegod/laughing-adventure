@@ -50,6 +50,12 @@ body {
 	font-family: "Stick", sans-serif;
 }
 
+main a {
+	font-family: "Stick", sans-serif;
+	font-weight: 600;
+	color: var(--text-main);
+}
+
 header {
 	background-color: var(--wood-dark);
 	padding: 0.5rem;

@@ -66,7 +66,7 @@ header img {
 
 nav {
 	background-color: var(--bg-second);
-	padding: 1rem;
+	/* padding: 1rem; */
 }
 
 nav a {
@@ -74,7 +74,13 @@ nav a {
 	color: var(--text-main);
 	font-weight: 700;
 	text-decoration: none;
-	margin: .3rem;
+	padding: 1rem 1.5rem;
+	transition: .3s;
+}
+
+nav a:hover {
+	background-color: #0000000F;
+	transition: .3s;
 }
 
 main {

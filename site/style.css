@@ -109,6 +109,30 @@ li {
 	margin-top: .5rem;
 }
 
+.blog {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--bg-second);
+	padding: 1rem;
+	margin-bottom: 2rem;
+}
+
+.blog img {
+	display: block;
+	width: 30%;
+	align-self: flex-start;
+	margin-right: 2rem;
+}
+
+.blog h3 {
+	color: var(--leaf-dark);
+	text-align: left;
+}
+
+.blog .info {
+	color: var(--wood);
+}
+
 footer {
 	background-color: var(--wood-dark);
 	color: var(--text-light);
